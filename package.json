@@ -1,0 +1,14 @@
+{
+  "name": "shapes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Bezier.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "curlrequest": "^1.0.1"
+  }
+}
