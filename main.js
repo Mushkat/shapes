@@ -1,4 +1,3 @@
-import {fetchLine} from './downloadJson.js';
 import {GithubLinks} from './githubLinks.js';
 import {extractJsonString, processObjects, printJsonObjects} from './parseJson.js';
 import {findObjects} from "./findObjects.js";
@@ -7,13 +6,7 @@ import {setupCanvas, drawShapes, infoShapes} from "./drawing.js";
 async function main() {
 
     // Получение строки из файла.
-    const url = GithubLinks.Cube;
-
-    try {
-        let rawData = await fetchLine(url);
-    } catch (error) {
-        console.error("Не удалось получить строку:", error);
-    }
+    const rawData = GithubLinks.Hexagonal_prism;
 
     // Получения массива объектов из строки.
     const jsonData = extractJsonString(rawData);
